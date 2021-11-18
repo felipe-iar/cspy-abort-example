@@ -1,5 +1,4 @@
 __var _breakID;
-__var _swAbortAddr;
 
 execUserSetup()
 {
