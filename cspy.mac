@@ -1,0 +1,28 @@
+__var _breakID;
+__var _swAbortAddr;
+
+execUserSetup()
+{
+  __message "execUserSetup(): loaded macro...";
+  _breakID = __setSimBreak("x", "W", "evalX()");
+}
+
+stopDebugSession()
+{
+  __message "stopDebugSession(): called.";
+  #PC = &_softwareAbort;
+}
+
+evalX()
+{
+  __message "evalX(): called. X=", x;
+  if (x > 5)
+  {
+    stopDebugSession();
+  }
+}
+
+execUserExit()
+{
+  __message "execUserExit(): called.";
+}
