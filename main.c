@@ -9,7 +9,7 @@ int main()
 {
   for (; x < 10; x++)
   {
-    printf("Hello world %u\n", x);
+    printf("Hello, World %u\n", x);
   }
   while(1);
 }

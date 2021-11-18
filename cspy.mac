@@ -8,7 +8,7 @@ execUserSetup()
 
 stopDebugSession()
 {
-  __message "stopDebugSession(): called.";
+  __message "stopDebugSession(): Goodbye, World.";
   #PC = &_softwareAbort;
 }
 
